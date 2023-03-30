@@ -1,0 +1,120 @@
+;/////////////////////////////////////////////////////////////////////////////////
+;// Code Generator: BoostC Compiler - http://www.sourceboost.com
+;// Version       : 6.97
+;// License Type  : Lite License (Unregistered)
+;// Limitations   : PIC12,PIC16 max code size:2048 words, max RAM banks:2, Non commercial use only
+;/////////////////////////////////////////////////////////////////////////////////
+
+
+Map File
+
+Program Memory usage
+====================
+
+Address  Length   Unique Name      Name
+-------  ------   -----------      ----
+00000000:00000004 _resetvector     _resetvector  
+00000004:0000000C _interruptVector _interruptVector  
+00000010:0000000A delay_us_00000   delay_us(unsigned char)  
+0000001A:0000000A delay_10us_00000 delay_10us(unsigned char)  
+00000024:0000000C delay_ms_00000   delay_ms(unsigned char)  
+00000030:0000000F delay_s_00000    delay_s(unsigned char)  
+0000003F:00000052 storeTempD_0001B storeTempDigits4(signed short)  
+00000091:0000001C oneWireTxB_00016 oneWireTxByte(unsigned char)  
+000000AD:00000041 displayVal_00019 displayValue(unsigned char)  
+000000EE:00000029 __mul_16s__0000E __mul_16s_16s__16(signed short,signed short)  
+00000117:00000087 storeTemp_00000  storeTemp(void)  
+0000019E:0000000B refreshDis_0001A refreshDisplay(void)  
+000001A9:00000007 oneWireTxB_00017 oneWireTxBytes(unsigned char,unsigned char)  
+000001B0:0000001E oneWireRxB_00018 oneWireRxByte(void)  
+000001CE:00000008 oneWireBus_00014 oneWireBusResetTimerStart(void)  
+000001D6:00000008 startTemp_00000  startTemp(void)  
+000001DE:00000012 readTemp_00000   readTemp(void)  
+000001F0:0000000B oneWireBus_00015 oneWireBusReset2(void)  
+000001FB:0000000A oneWireBus_00013 oneWireBusReset(void)  
+00000205:00000030 initialise_00000 initialise(void)  
+00000235:00000045 main             main(void)  
+0000027A:0000004D _startup_00000   _startup(void)  
+000002C7:00000024 interrupt        interrupt(void)  
+000002EB:00000515 *Unused Block 
+
+Register usage
+==============
+
+Address  Bit Lengh Bit Mask   Unique Name                      Name
+-------  --------- --------   -----------                      ----
+00000000:00000008             gbl_indf                         indf
+00000001:00000008             gbl_tmr0                         tmr0
+00000002:00000008             gbl_pcl                          pcl
+00000003:00000008             gbl_status                       status
+00000004:00000008             gbl_fsr                          fsr
+00000005:00000008             gbl_porta                        porta
+00000006:00000008             gbl_portb                        portb
+0000000A:00000008             gbl_pclath                       pclath
+0000000B:00000008             gbl_intcon                       intcon
+0000000C:00000008             gbl_pir1                         pir1
+0000000E:00000008             gbl_tmr1l                        tmr1l
+0000000F:00000008             gbl_tmr1h                        tmr1h
+00000010:00000008             gbl_t1con                        t1con
+00000011:00000008             gbl_tmr2                         tmr2
+00000012:00000008             gbl_t2con                        t2con
+00000015:00000008             gbl_ccpr1l                       ccpr1l
+00000016:00000008             gbl_ccpr1h                       ccpr1h
+00000017:00000008             gbl_ccp1con                      ccp1con
+00000018:00000008             gbl_rcsta                        rcsta
+00000019:00000008             gbl_txreg                        txreg
+0000001A:00000008             gbl_rcreg                        rcreg
+0000001F:00000008             gbl_cmcon                        cmcon
+00000020:00000060             gbl_arrSegments0                 arrSegments0
+0000002C:00000060             gbl_arrSegments1                 arrSegments1
+00000038:00000020             gbl_arrDigits                    arrDigits
+0000003C:00000020             gbl_arrTemp                      arrTemp
+00000040:00000018             Int1BContext                     Int1BContext
+00000043:00000008             gbl_bUnitButtonPrev              bUnitButtonPrev
+00000044:00000008             gbl_cTempH                       cTempH
+00000045:00000008             gbl_cTempL                       cTempL
+00000046:00000008             gbl_iDecimalPosition             iDecimalPosition
+00000047:00000008             gbl_iDigitCounter                iDigitCounter
+00000048:00000008             gbl_iTempUnit                    iTempUnit
+00000049:00000008             gbl_cTask                        cTask
+0000004A:00000008             gbl_iTimer1Count                 iTimer1Count
+0000004B:00000008             gbl_oneWireIsPresent             oneWireIsPresent
+0000004C:00000008             gbl_oneWireResetStage            oneWireResetStage
+0000004D:00000008             delay_s_00000_arg_del            del
+0000004E:00000008             delay_ms_00000_arg_del           del
+0000004F:00000008             delay_us_00000_arg_del           del
+00000050:00000010             storeTemp_00000_3_iTempC         iTempC
+00000051:00000008             CompTempVar619                  
+00000052:00000008             delay_10us_00000_arg_del         del
+00000053:00000008             storeTemp_00000_16_isMinus       isMinus
+00000054:00000010             __mul_16s__0000E_arg_b           b
+00000056:00000008             CompTempVar601                  
+00000057:00000008             CompTempVar604                  
+00000058:00000010             storeTempD_0001B_arg_iValue      iValue
+00000059:00000010             __mul_16s__0000E_1_t             t
+0000005A:00000008             storeTempD_0001B_1_cDig3         cDig3
+0000005B:00000008             storeTempD_0001B_1_cDig2         cDig2
+0000005C:00000008             storeTempD_0001B_1_cDig1         cDig1
+0000005D:00000008             storeTempD_0001B_1_cDig0         cDig0
+0000005E:00000008             CompTempVar589                  
+0000007F:00000008             Int1Context                      Int1Context
+00000081:00000008             gbl_option_reg                   option_reg
+00000085:00000008             gbl_trisa                        trisa
+00000086:00000008             gbl_trisb                        trisb
+0000008C:00000008             gbl_pie1                         pie1
+0000008E:00000008             gbl_pcon                         pcon
+00000092:00000008             gbl_pr2                          pr2
+00000098:00000008             gbl_txsta                        txsta
+00000099:00000008             gbl_spbrg                        spbrg
+0000009A:00000008             gbl_eedata                       eedata
+0000009B:00000008             gbl_eeadr                        eeadr
+0000009C:00000008             gbl_eecon1                       eecon1
+0000009D:00000008             gbl_eecon2                       eecon2
+0000009F:00000008             gbl_vrcon                        vrcon
+
+
+Memory Usage Report
+===================
+RAM available:224 bytes, used:64 bytes (28.6%), free:160 bytes (71.4%), 
+Heap size:112 bytes, Heap max single alloc:94 bytes
+ROM available:2048 words, used:747 words (36.5%), free:1301 words (63.5%)

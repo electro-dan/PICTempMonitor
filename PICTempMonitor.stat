@@ -1,0 +1,26 @@
+// SourceBoost Linker Function Resource Usage Dump
+
+#GLOBAL:"global",line = 0,ram = 46.0,rom = 0;
+__mul_16s_16s__16(signed short,signed short):"E:\Prg\compiler.6\picantc\libc\mul.c",line = 337,ram = 9.0,rom = 41;
+oneWireBusReset(void):"Z:\home\dan\PIC\PICTempMonitor\PICTempMonitor.c",line = 29,ram = 1.0,rom = 10;
+oneWireBusResetTimerStart(void):"Z:\home\dan\PIC\PICTempMonitor\PICTempMonitor.c",line = 18,ram = 0.0,rom = 8;
+oneWireBusReset2(void):"Z:\home\dan\PIC\PICTempMonitor\PICTempMonitor.c",line = 45,ram = 0.0,rom = 11;
+oneWireTxByte(unsigned char):"Z:\home\dan\PIC\PICTempMonitor\PICTempMonitor.c",line = 59,ram = 3.0,rom = 28;
+oneWireTxBytes(unsigned char,unsigned char):"Z:\home\dan\PIC\PICTempMonitor\PICTempMonitor.c",line = 91,ram = 2.0,rom = 7;
+oneWireRxByte(void):"Z:\home\dan\PIC\PICTempMonitor\PICTempMonitor.c",line = 101,ram = 3.1,rom = 30;
+displayValue(unsigned char):"Z:\home\dan\PIC\PICTempMonitor\PICTempMonitor.c",line = 269,ram = 2.0,rom = 65;
+refreshDisplay(void):"Z:\home\dan\PIC\PICTempMonitor\PICTempMonitor.c",line = 301,ram = 0.0,rom = 11;
+storeTempDigits4(signed short):"Z:\home\dan\PIC\PICTempMonitor\PICTempMonitor.c",line = 368,ram = 7.0,rom = 82;
+storeTemp(void):"Z:\home\dan\PIC\PICTempMonitor\PICTempMonitor.c",line = 421,ram = 7.0,rom = 135;
+startTemp(void):"Z:\home\dan\PIC\PICTempMonitor\PICTempMonitor.c",line = 472,ram = 0.0,rom = 8;
+readTemp(void):"Z:\home\dan\PIC\PICTempMonitor\PICTempMonitor.c",line = 482,ram = 0.0,rom = 18;
+initialise(void):"Z:\home\dan\PIC\PICTempMonitor\PICTempMonitor.c",line = 133,ram = 0.0,rom = 48;
+interrupt(void):"Z:\home\dan\PIC\PICTempMonitor\PICTempMonitor.c",line = 317,ram = 0.0,rom = 36;
+main(void):"Z:\home\dan\PIC\PICTempMonitor\PICTempMonitor.c",line = 500,ram = 0.0,rom = 69;
+delay_us(unsigned char):"NoSourceFile",line = 0,ram = 0.0,rom = 10;
+delay_10us(unsigned char):"NoSourceFile",line = 0,ram = 0.0,rom = 10;
+delay_ms(unsigned char):"NoSourceFile",line = 0,ram = 0.0,rom = 12;
+delay_s(unsigned char):"NoSourceFile",line = 0,ram = 1.0,rom = 15;
+_startup(void):"NoSourceFile",line = 0,ram = 0.0,rom = 77;
+#HEAP_BLOCK: 0, 160, 95;
+#HEAP_BLOCK: 1, 95, 17;
